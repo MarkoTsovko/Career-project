@@ -26,3 +26,9 @@ $(document).ready(function(){
   ]
 	});
 });
+
+ $( ".burger" ).click(function check() {
+  $( this ).toggleClass( "burgeractive"),
+  $("body").toggleClass("off"),
+  $(".responsive__menu").toggleClass("display-visiable");
+});
