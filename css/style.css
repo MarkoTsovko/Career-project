@@ -56,7 +56,6 @@ h1,h2,h3,h4,h5,h6,span,p{
 	
 }
 .header{
-	padding-top: 25px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
@@ -71,6 +70,9 @@ h1,h2,h3,h4,h5,h6,span,p{
 } */
 .header .container{
 	height: 100%;
+}
+.header__top{
+	padding-top: 40px;
 }
 .header .nav ul{
 	padding: 0;
@@ -165,11 +167,113 @@ ul li ul:hover{
 	color: #c84141;
 }	
 .header__text{
-	height: 90%;
+	height: 85%;
 }
 .header__text .row{
-	height: 90%;
+	height: 85%;
 }
+
+
+/* HEADER FOR CUSTOM PAGE */
+
+
+.header__page .container{
+	height: 310px;
+}
+.header__page{
+	padding-top: 0px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header__page .nav ul{
+	padding: 0;
+}
+.header__page .nav ul li ul{
+	width: 318px;
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	transition: all 0.3s ease;
+	margin-top: 1rem;
+	display: none;
+	background-color: #303030;
+	z-index: 2;
+	padding-bottom: 4px;
+}	
+.header__page .nav ul li:hover > ul,
+ul li ul:hover{
+	visibility: visible;
+	opacity: 1;
+	display: block;
+}	
+.header__page .nav .header .nav ul li:hover > ul,
+ ul li ul:before{
+	content: "1";
+	opacity: 0;
+	top: -10px;
+	width: 72.5px;
+	position: absolute;
+}	
+.header__page .nav ul li ul li{
+	clear: both;
+	width: 100%;
+}	
+.header__page .nav ul li ul li a{
+	display: inline-block;
+	padding: 0;
+	padding: 12px 0 0 12px;
+}	
+.header__page .nav ul li ul li a:hover{
+	color: #c84141;
+	font-family: "Futura Demi C";
+}
+.header__page .nav li a{
+	padding: 9px 14px 10px 11px;
+	font-size: 1.125rem;
+}
+.header__page .nav li a:hover{  
+	transition: all 0.3s;
+	background-color: rgba(48, 48, 48, 0.6);
+}	
+.header__page .phone{
+	margin-top: -10px;
+	text-align: right;
+}
+.header__page .phone span#city{
+	display: block;
+	font-family: "Futura Light C";
+	font-size: 0.875rem;
+}	
+.header__page .phone a#phone{
+	font-family: "Futura Demi C";
+	width: 100%;
+	font-size: 1.5625rem;
+}
+.header__page-text{
+	margin-top: 73px;
+}
+.header__page-text h1{
+	font-family: "Futura Demi C";
+	font-size: 2.5rem;
+	letter-spacing: 2.8px;
+}	
+.header__page-text h1.error404-mobile{
+	display: none;
+}	
+.header__page-bottom{
+	margin-top: 57px;
+}
+.header__page-bottom ul li a{
+	color: #d6d6d6;
+	font-size: 1rem;
+	letter-spacing: 1.12px;
+}	
+
+
+
+/* END HEADER FOR CUSTOM PAGE */
 .about{
 	margin-top: 130px;
 }
@@ -344,17 +448,17 @@ ul li ul:hover{
 	background-color: #000;
 }	
 .partners{
+	height: 167px;
 	margin-top: 130px;
 }
 .partners h2{
 	color: #303030;
 	font-family: "Futura Demi C";
 	font-size: 2.25rem;
+	margin-bottom: 58px;
 }
 .partners__slider{
 	width: 85%;
-	padding-top: 58px;
-	padding-bottom: 130px;
 	position: relative;
 }
 .slick-slide{
@@ -435,7 +539,8 @@ ul li ul:hover{
 	left: 15px;
 }
 .contacts{
-	padding-bottom: 130px;
+	margin-top: 130px;
+	margin-bottom: 130px;
 }
 .contacts h2{
 	color: #303030;
@@ -497,6 +602,144 @@ ul li ul:hover{
 
 
 
+/* CUSTOM TEMPLATES FOR PAGES */
+
+.error404{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.error404 h1{
+	font-family: "Futura Demi C";
+	font-size: 40px;
+	font-weight: 400;
+	letter-spacing: 2.8px;
+}
+.error404 p{
+	color: #000;
+	font-family: "Futura Light C";
+	font-size: 	1.25rem;
+	margin-bottom: 30px;
+}
+.error404 p:nth-child(2){
+	margin: 0;
+}	
+.error404 a{
+	margin-top: 43px;
+	display: inline-block;
+	font-size: 1rem;
+	padding: 11px 23px 11px 23px;
+	background-color: #c84141;
+}
+.about__page{
+	margin-top: 131px;
+	margin-bottom: 135px;
+}
+.about__page__description span{
+	display: block;
+	color: #303030;
+	font-family: "Futura Light C";
+	font-size: 	1.125rem;
+	padding-bottom: 40px;
+}
+.about__page__description span:nth-child(2){
+	padding: 0;
+}	
+.about__page__photo img{
+	width: 100%;
+}
+.about__page__license{
+	margin-top: 80px;
+}
+.about__page__license p{
+	margin-top: 29px;
+	font-family: Futura Demi C;
+	font-size: 1rem;
+	line-height: 19px;
+	text-align: center;
+	font-weight: 700;
+	color: #303030;
+}
+.about__page__license img{
+	width: 100%;
+}
+.about__page__license-description{
+	margin-top: 110px;
+}
+.about__page__license-description span{
+	display: block;
+	color: #303030;
+	font-family: "Futura Light C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	margin-bottom: 25px;
+}
+.more__service {
+	margin-top: 75px;
+	font-family: Futura Book C;
+	font-size: 1rem;
+	line-height: 18px;
+	padding: 13px 22px 9px 27px;
+	background-color: #C84141;
+	display: inline-block;
+}
+.services__page{
+	margin-top: 131px;
+	margin-bottom: 135px;
+}
+.services__page-service:last-child {
+	margin-bottom: 0;
+}
+.services__page-service{
+	margin-bottom: 130px;
+	width: 100%;
+}
+.services__page-service img{
+	width: 100%;
+}
+.services__page-service h2{
+	font-family: "Futura Demi C";
+	font-size: 1.25rem;
+	line-height: 20px;
+	color: #303030;
+	font-weight: 700;
+	margin-bottom: 34px;
+}
+.services__page-service p{
+	font-family: "Futura Light C";
+	font-size: 1.14rem;
+	line-height: 20px;
+	color: #303030;
+	margin-bottom: 34px;
+}
+.services__page-service li{
+	font-family: "Futura Light C";
+	font-size: 1.14rem;
+	line-height: 20px;
+	color: #303030;
+}
+.services__page-service span.price{
+	color: #303030;
+	font-size: 1.125rem;
+	line-height: 20px;
+	margin-bottom: 34px;
+	display: block;
+	font-weight: 700;
+}
+
+.services__page-service .services__checkout{
+	margin-right: 30px;
+	margin-top: 0;
+	display: inline-block;
+}
+.more-button{
+	display: inline-block;
+	color: #303030;
+	font-size: 1rem;
+	border: 1px solid #c84141;
+	padding: 10px 54px;
+}
+
+/* END CUSTOM TEMPLATES FOR PAGES */
 
 	
 @media only screen and (max-width: 1199px) {
@@ -651,7 +894,41 @@ ul li ul:hover{
 	display: none;
 }
 
+/* RESPONSIVE CUSTOM TEMPLATES FOR PAGES */
+
+.about__page{
+	margin-top: 80px;
+	margin-bottom: 206px;
+}
+.about__page__license{
+	margin-top: 58px;
+}
+.about__page__license p{
+	margin-top: 20px;
+}
+.about__page__license-description{
+	margin-top: 58px;
+}
+.more__service {
+	margin-top: 80px;
+}
+.services__page-service .services__checkout{
+	margin-right: 28px;
+	padding: 11px 24px;
+}
+.more-button{
+	padding: 10px 36px;
+}
+.services__page{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.services__page-service{
+	margin-bottom: 80px;
+}
 	
+/* END RESPONSIVE CUSTOM TEMPLATES FOR PAGES */
+
 }	
 @media only screen and (max-width: 991px) {
 .responsive__menu-container{
@@ -723,9 +1000,6 @@ ul li ul:hover{
 .partners{
 	margin-top: 80px;
 }	
-.contacts{
-	padding-bottom: 80px;
-}
 .contacts h2{
 	margin-bottom: 41px;
 }
@@ -758,6 +1032,53 @@ ul li ul:hover{
 .copyright{
 	margin-top: 54px;
 }
+
+/* RESPONSIVE CUSTOM TEMPLATES FOR PAGES */
+.header__page-text h1.error404-desktop{
+	display: none;
+}
+.header__page-text h1.error404-mobile{
+	display: block;
+}	
+.about__page{
+	margin-bottom: 80px;
+}
+.about__page__photo{
+	margin-top: 40px;
+}
+.about__page__license{
+	margin-top: 40px;
+}
+.about__page__license-description{
+	margin-top: 40px;
+}
+.about__page__license-description span:nth-child(4){
+	margin: 0;
+}
+.more__service{
+	margin-top: 40px;
+}
+.services__page-service .services__checkout{
+	margin-right: 25px;
+	padding: 11px 15px;
+}
+.more-button{
+	padding: 10px 27px;
+}
+.services__page-service img{
+	margin-bottom: 20px;
+}
+.services__page-service h2{
+	margin-bottom: 20px;
+}
+.services__page-service p{
+	margin-bottom: 10px;
+}
+.services__page-service span.price{
+	margin-bottom: 20px;
+}
+/* END RESPONSIVE CUSTOM TEMPLATES FOR PAGES */
+
 }	
 
 
