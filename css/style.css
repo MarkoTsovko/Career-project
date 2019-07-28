@@ -10,6 +10,10 @@
     font-family: "Futura Light C";
     src: url(../fonts/futuralightc.otf) ; /* Путь к файлу со шрифтом */
    } 
+@font-face {
+    font-family: "Futura Medium C";
+    src: url(../fonts/futuramediumc.otf) ; /* Путь к файлу со шрифтом */
+   }    
 
 .h-100{
 	height: 100%;
@@ -675,7 +679,7 @@ ul li ul:hover{
 }
 .more__service {
 	margin-top: 75px;
-	font-family: Futura Book C;
+	font-family: "Futura Book C";
 	font-size: 1rem;
 	line-height: 18px;
 	padding: 13px 22px 9px 27px;
@@ -738,13 +742,139 @@ ul li ul:hover{
 	border: 1px solid #c84141;
 	padding: 10px 54px;
 }
-
+.service__page{
+	margin-top: 131px;
+	margin-bottom: 131px;
+}
+.service__page-description{
+	margin-bottom: 80px;
+}
+.service__page-description p{
+	font-family: "Futura Light C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	color: #303030;
+	margin-bottom: 30px;
+}	
+.service__page-description p:last-child{
+	margin-bottom: 0;
+}
+.service__page h3{
+	font-family: "Futura Demi C";
+	font-size: 1.125rem;
+	line-height: 21px;
+	color: #303030;
+	text-align: center;
+	margin-bottom: 34px;
+}
+.service__page h4{
+	font-family: "Futura Medium C";
+	font-size: 1.125rem;
+	line-height: 21px;
+	color: #C84141;
+	margin-bottom: 34px;
+}
+.service__page-steps{
+	margin-bottom: 80px;
+}
+.service__page-steps ul{
+	margin-bottom: 38px;
+}
+.service__page-steps ul:last-child{
+	margin-bottom: 0;
+}
+.service__page-steps li{
+	font-family: "Futura Light C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	color: #000;
+}
+.service__page-results{
+	margin-bottom: 80px;
+}
+.service__page-results-element{
+	padding: 26px 48px 13px 47px;
+	border: 1px solid #D6D6D6;
+	height: 168px;
+	width: 255px;
+}
+.service__page-results-element img{
+	margin-bottom: 20px;
+}
+.service__page-results-element p{
+	font-family: "Futura Light C";
+	font-size: 1.125rem
+	line-height: 20px;
+	color: #303030;
+}
+.service__page-cost p{
+	font-family: FuturaLightC;
+	font-size: 1.125rem;
+	line-height: 20px;
+	color: #000;
+}
+.service__page-cost-buttons{
+	margin-top: 92px;
+}
+.service__page-cost-buttons a{
+	display: inline-block;
+}
+.service__page-cost-buttons .services__checkout{
+	margin-top: 0;
+	padding: 11px 45px 11px 45px;
+	margin-right: 30px;
+}
+.service__page-cost-buttons .more-button{
+	padding: 10px 48px;
+}
+.projects__page-element{
+	margin-bottom: 80px;
+}
+.projects__page-element-photo{
+	position: relative;
+	margin-bottom: 20px;
+}
+.projects__page-element a{
+	transition: all 0.5s ease;
+	display: block;
+	padding: 10px 53px 9px 53px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.125rem;
+    background-color: #c84141;
+    opacity: 0;
+}
+.projects__page-element:hover a{
+	opacity: 1;
+}
+.projects__page-element h3{
+	font-family: "Futura Demi C";
+	font-size: 1.125rem;
+	line-height: 21px;
+	color: #303030;
+	margin-bottom: 7px;
+}
+.projects__page-element span{
+	font-family: "Futura Light C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	color: #303030;
+}
+.projects__page-element p{
+	margin-top: 20px;
+	font-family: "Futura Light C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	color: #000;
+}
 /* END CUSTOM TEMPLATES FOR PAGES */
 
 	
 @media only screen and (max-width: 1199px) {
 .responsive__menu{
-	padding-top: 25px;
+	padding-top: 40px;
 	color: red;
 	position: fixed;
 	top: 0;
@@ -926,7 +1056,32 @@ ul li ul:hover{
 .services__page-service{
 	margin-bottom: 80px;
 }
-	
+.service__page{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}	
+.service__page-results-element{
+	width: 206px;
+	padding: 25px 26px 13px 26px;
+}	
+.service__page h4{
+	margin-bottom: 18px;
+}	
+.service__page ul{
+	margin-bottom: 34px;
+}
+.service__page-cost-buttons {
+	margin-top: 80px;
+}	 
+.projects__page-element{
+	width: 324px;
+}
+.projects__page-element img{
+	width: 100%;
+}
+.projects__page-element p {
+	margin-top: 24px;
+}	
 /* END RESPONSIVE CUSTOM TEMPLATES FOR PAGES */
 
 }	
@@ -938,6 +1093,9 @@ ul li ul:hover{
 @media only screen and (max-width: 767px) {
 .responsive__menu-container{
 	max-width: 540px;
+}	
+.responsive__menu-nav ul li a {
+	margin-bottom: 45px;
 }	
 .header .text h1{
 	font-size: 1.5625rem;
@@ -1040,6 +1198,12 @@ ul li ul:hover{
 .header__page-text h1.error404-mobile{
 	display: block;
 }	
+.header__page-text h1.service__mobile {
+	font-size: 1.875rem;
+}	
+.header__page-bottom.mobile{
+	margin-top: 33px;
+}
 .about__page{
 	margin-bottom: 80px;
 }
@@ -1077,6 +1241,40 @@ ul li ul:hover{
 .services__page-service span.price{
 	margin-bottom: 20px;
 }
+.service__page h3 {
+	margin-bottom: 40px;
+}	
+.service__page h4 {
+	margin-bottom: 20px;
+}	
+.service__page ul {
+	margin-bottom: 40px;
+}	
+.service__page-results {
+	margin-bottom: 60px;
+}	
+.service__page-results-element{
+	display: block;
+	width: 255px;
+	margin-bottom: 20px;
+}	
+.service__page-cost h3{
+	margin-bottom: 20px;
+}
+.service__page-cost-buttons .services__checkout{
+	padding: 11px 15px 11px 15px;
+	margin-right: 25px;
+}
+.service__page-cost-buttons .more-button{
+	padding: 11px 18px 11px 18px;
+}
+.projects__page-element{
+	width: 290px;
+}
+.projects__page-element h3 {
+	margin-bottom: 20px;
+}	
+
 /* END RESPONSIVE CUSTOM TEMPLATES FOR PAGES */
 
 }	
