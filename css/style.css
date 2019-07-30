@@ -715,6 +715,9 @@ ul li ul:hover{
 	color: #303030;
 	margin-bottom: 34px;
 }
+.services__page-service ul{
+	margin-bottom: 34px;
+}
 .services__page-service li{
 	font-family: "Futura Light C";
 	font-size: 1.14rem;
@@ -803,7 +806,7 @@ ul li ul:hover{
 }
 .service__page-results-element p{
 	font-family: "Futura Light C";
-	font-size: 1.125rem
+	font-size: 1.125rem;
 	line-height: 20px;
 	color: #303030;
 }
@@ -826,6 +829,121 @@ ul li ul:hover{
 }
 .service__page-cost-buttons .more-button{
 	padding: 10px 48px;
+}
+.modal{
+	position: relative;
+	transition: all 0.3s ease;
+	opacity: 0;
+	visibility: hidden;
+	padding-top: 38px;
+	padding-bottom: 32px;
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+	z-index: 998;
+	width: 100%;
+	background-color: #C84141;
+}
+.modal.active{
+	transition: all 0.3s ease;
+	opacity: 1;
+	visibility: visible;
+}
+.modal-close{
+	position: absolute;
+	top: 5%;
+	right: 0;
+}
+.modal h3{
+	font-family: "Futura Demi C";
+	font-size: 1.875rem;
+	line-height: 35px;
+	margin-bottom: 33px;
+}
+.modal p{
+	font-family: "Futura Light C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	margin-bottom: 33px;
+}
+.modal form{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.modal form input{
+	padding: 15px 21px;
+	width: 285px;
+	height: 44px;
+	border: none;
+	font-family: "Futura Light C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	color: #585858;
+	margin-bottom: 32px;
+}
+.modal form select{
+	padding: 6px 21px 0px 15px;
+	width: 100%;
+	height: 44px;
+	border: none;
+	font-family: "Futura Light C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	color: #585858;
+	background: #fff;
+
+}	
+.modal__happy{
+	position: relative;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s ease;
+	padding-top: 41px;
+	padding-bottom: 44px;
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+	z-index: 999;
+	width: 100%;
+	background-color: #C84141;
+	
+}
+.modal__happy.active{
+	transition: all 0.3s ease;
+	opacity: 1;
+	visibility: visible;
+}	
+.modal__happy h3{
+	font-family: "Futura Demi C";
+	font-size: 1.875rem;
+	line-height: 35px;
+	margin-bottom: 23px;
+}
+.modal__happy p{
+	font-family: "Futura Light C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+.modal__happy a{
+	display: inline-block;
+	padding: 10px 31px;
+	font-family: "Futura Book C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	color: #303030;
+	background-color: #fff;
+
+}
+.modal .question-form__terms a{
+	display: inline-block;
+	padding: 10px 28px;
+	font-family: "Futura Book C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	color: #303030;
+	background-color: #fff;
 }
 .projects__page-element{
 	margin-bottom: 80px;
@@ -868,6 +986,101 @@ ul li ul:hover{
 	font-size: 1.125rem;
 	line-height: 20px;
 	color: #000;
+}
+.header__page-text h1.project__mobile{
+	display: none;
+}	
+.project__page{
+	margin-top: 133px;
+	margin-bottom: 131px;
+}
+.project__page-info h3{
+	font-family: "Futura Demi C";
+	font-size: 1.125rem;
+	line-height: 21px;
+	color: #303030;
+	margin-bottom: 30px;
+}
+.project__page-photo img{
+	width: 100%;
+}
+.project__page-info p{
+	font-family: "Futura Light C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	color: #303030;
+	margin-bottom: 34px;
+}
+.project__page-description{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.project__page-description h3{
+	font-family: "Futura Demi C";
+	font-size: 1.125rem;
+	line-height: 21px;
+	text-align: center;
+	color: #303030;
+	margin-bottom: 34px;
+}
+.project__page-description p{
+	font-family: "Futura Light C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	color: #303030;
+	margin-bottom: 30px;
+}
+.project__page-description p:last-child{
+	margin-bottom: 0;
+}
+.project__page-result{
+	margin-bottom: 80px;
+}
+.project__page-result h3{
+	font-family: "Futura Demi C";
+	font-size: 1.125rem;
+	line-height: 21px;
+	text-align: center;
+	color: #303030;
+	margin-bottom: 34px;
+}
+.project__page-result p{
+	font-family: "Futura Light C";
+	font-size: 1.125rem;
+	line-height: 20px;
+	color: #303030;
+	margin-bottom: 30px;
+}
+.project__page-result p:last-child{
+	margin-bottom: 0;
+}
+.project__page-response h3{
+	font-family: "Futura Demi C";
+	font-size: 1.125rem;
+	line-height: 21px;
+	text-align: center;
+	color: #303030;
+	margin-bottom: 34px;
+}
+.project__page a.services__checkout{
+	margin-top: 80px;
+	display: inline-block;
+	padding: 11px 39px;
+	margin-bottom: 80px;
+}
+.project__page-other-projects h3{
+	font-family: "Futura Demi C";
+	font-size: 1.125rem;
+	line-height: 21px;
+	color: #303030;
+	margin-bottom: 34px;
+}
+.project__page a.more-button{
+	display: inline-block;
+	padding: 10px 22px;
+}	
+.project__page-response-photo img{
+	width: 100%;
 }
 /* END CUSTOM TEMPLATES FOR PAGES */
 
@@ -1082,6 +1295,15 @@ ul li ul:hover{
 .projects__page-element p {
 	margin-top: 24px;
 }	
+.project__page-info h3 {
+	margin-bottom: 20px;
+}	
+.project__page-response h3 {
+	margin-bottom: 50px;
+}
+.modal form input{
+	width: 28%;
+}	
 /* END RESPONSIVE CUSTOM TEMPLATES FOR PAGES */
 
 }	
@@ -1089,6 +1311,9 @@ ul li ul:hover{
 .responsive__menu-container{
 	max-width: 720px;
 }	
+.header__page-text h1.project__desktop{
+	font-size: 1.875rem;
+}
 }	
 @media only screen and (max-width: 767px) {
 .responsive__menu-container{
@@ -1198,8 +1423,14 @@ ul li ul:hover{
 .header__page-text h1.error404-mobile{
 	display: block;
 }	
-.header__page-text h1.service__mobile {
+.header__page-text h1.service__mobile{
 	font-size: 1.875rem;
+}	
+.header__page-text h1.project__desktop{
+	display: none;
+}	
+.header__page-text h1.project__mobile{
+	display: block;
 }	
 .header__page-bottom.mobile{
 	margin-top: 33px;
@@ -1238,6 +1469,9 @@ ul li ul:hover{
 .services__page-service p{
 	margin-bottom: 10px;
 }
+.services__page-service ul{
+	margin-bottom: 10px;
+}	
 .services__page-service span.price{
 	margin-bottom: 20px;
 }
@@ -1274,6 +1508,24 @@ ul li ul:hover{
 .projects__page-element h3 {
 	margin-bottom: 20px;
 }	
+
+.modal h3 {
+	margin-bottom: 24px;
+}	
+.modal p{
+	margin-bottom: 20px;
+}
+.modal form input{
+	width: 100%;
+	margin-bottom: 14px;
+}	
+.modal-happy{
+	margin-top: 14px;
+}
+.modal-close{
+	top: 3%;
+}	
+
 
 /* END RESPONSIVE CUSTOM TEMPLATES FOR PAGES */
 
